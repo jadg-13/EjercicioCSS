@@ -7,7 +7,7 @@
     <meta name="author" content="Durán G.">
     <title>UAM</title>
     <link rel="stylesheet" href="css/styles.css">
-    
+
 </head>
 
 <body>
@@ -19,28 +19,30 @@
 
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Misión</h2>
-            <p>Proveer a nuestros clientes de muebles de calidad a precios accesibles, con un servicio de excelencia.
-            </p>
-
-            <h2>Visión</h2>
-            <p>Ser la mueblería más grande de Masatepe, ofreciendo productos de calidad y un servicio de excelencia.</p>
-            <h2>Valores</h2>
-            <ul>
-                <li>Calidad</li>
-                <li>Excelencia</li>
-                <li>Responsabilidad</li>
-                <li>Respeto</li>
-                <li>Compromiso</li>
-            </ul>
+            <!-- Formulario de contacto -->
+            <h2>Contacto</h2>
+            <div class="contacto">
+                <form action="enviar.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <br>
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo" id="correo" required>
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" required></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
         <!-- barra lateral -->
         <aside>
