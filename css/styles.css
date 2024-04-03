@@ -1,0 +1,151 @@
+/* h1 */
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  color: white;
+}
+
+/* h2 */
+h2 {
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+  color: #333;
+  padding-left: 10px;
+}
+
+p {
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  color: #333;
+  padding-left: 10px;
+}
+
+/* navegación */
+nav {
+  background-color: #333;
+  overflow: hidden;
+  /* Redondear esquinas */
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+}
+
+nav li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+/* clase container -  todo en la misma linea centrado vertical y horizontal*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  /* imagen de fondo tomar el ancho de la ventana*/
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* idlogo imagen redonda */
+#logo {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+#logo:hover {
+  /* aumentar tamaño */
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* section a la izquierda ocupando un 70% de la ventana */
+section {
+  float: left;
+  width: 62%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* aside a la derecha */
+aside {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+aside a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  border-radius: 10px;
+}
+
+aside a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+/* footer siempre abajo */
+footer {
+  clear: both;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+footer p {
+  font-size: small;
+  color: white;
+  text-align: center;
+}
